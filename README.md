@@ -1,6 +1,6 @@
 # nodejs-blog
-A simple Nodejs/Express web application showing practical use of schema in mongoose, an ODM for MongoDB.
-Built primarily to aid <a href= "https://www.joint-access-programmer.com/mongoose-schema-types/" >this article</article>
+A simple Nodejs/Express blog showing practical use of <b>CRUD</b> functionalities. 
+Built primarily to aid <a href= "https://www.joint-access-programmer.com/how-to-create-a-blog-in-node-js/" >this article</article>
 
 ## Homepage-1
 ![demo](https://github.com/PiusLucky/nodejs-blog/blob/master/public/img/Screenshot_1.jpg?raw=true)
