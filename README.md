@@ -6,7 +6,7 @@ Built primarily to aid <a href= "https://www.joint-access-programmer.com/mongoos
 ![demo](https://github.com/PiusLucky/nodejs-blog/blob/master/public/img/Screenshot_1.jpg?raw=true)
 
 ## Homepage-2
-![demo](https://github.com/PiusLucky/nodejs-blog/blob/master/public/img/Screenshot_2.jpg?raw=true)
+![demo](https://github.com/PiusLucky/nodejs-blog/blob/master/public/img/Screenshot_2.png?raw=true)
 
 ## Detail Page
 ![demo](https://github.com/PiusLucky/nodejs-blog/blob/master/public/img/Screenshot_3.jpg?raw=true)
