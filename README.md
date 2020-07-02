@@ -1,5 +1,5 @@
-# nodejs-blog
-A simple Nodejs/Express blog showing practical use of <b>CRUD</b> functionalities. 
+# Nodejs-blog
+A simple Nodejs/Express blog application showing practical use of <b>CRUD</b> functionalities. 
 Built primarily to aid <a href= "https://www.joint-access-programmer.com/how-to-create-a-blog-in-node-js/" >this article</article>
 
 ## Homepage-1
@@ -47,9 +47,9 @@ Paste the above url in your browser and explore.
 ## Author
 
 👤 **Pius Lucky**
-   **Founder joint-access-programmer.com**
 
 - Github: [@PiusLucky](https://github.com/PiusLucky)
+- Official: [https://www.joint-access-programmer.com](https://www.joint-access-programmer.com)
 
 ## Show your support
 
