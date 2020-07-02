@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <%- include('../_extendables/head_links') %>
+</head>
+
+<body>
+ <%- include('../_extendables/nav') %>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/post-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1><%= article.title %> [ <%= article.status %> ]</h1>
+            <h2 class="subheading"><%= article.description %></h2>
+            <span class="meta">Posted by
+              <a href="#">Pius Lucky</a>
+              on  <%= article.published.toLocaleDateString() %></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+   <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p><%- article.sanitizedHtml %></p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+  <div style="display: flex;justify-content: center;">
+    <a href="/" class="btn btn-secondary">All Articles</a>
+    <a href="/edit/<%= article.id %>" class="btn btn-info">Edit</a>
+  </div>
+  <%- include('../_extendables/footer-scripts') %>
+
+</body>
+
+</html>

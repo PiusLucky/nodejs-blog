@@ -1,0 +1,25 @@
+<div class="form-group">
+  <label for="title">Title</label>
+  <input required value="<%= article.title %>" type="text" name="title" id="title" class="form-control">
+</div>
+<div class="form-group">
+  <label for="description">Description</label>
+  <textarea name="description" id="description" class="form-control"><%= article.description %></textarea>
+</div>
+<div class="form-group">
+  <label for="markdown">Body</label>
+  <textarea required name="body" id="body" class="form-control"><%= article.body %></textarea>
+</div>
+<br>
+<select class="custom-select" name="status">
+  <option selected value="Live"><%= article.status %></option>
+  <option value="Draft">Draft</option>
+</select>
+<br>
+<br>
+<div class="form-group">
+  <label for="published">Timestamp</label>
+  <input readonly="" required value="<%= article.published %>" name="published" id="published"  class="form-control">
+</div>
+<a href="/" class="btn btn-secondary">Cancel</a>
+<button type="submit" class="btn btn-primary">Save</button>

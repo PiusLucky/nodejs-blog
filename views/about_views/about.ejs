@@ -1,0 +1,67 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <%- include('../_extendables/head_links') %>
+</head>
+
+<body>
+ <%- include('../_extendables/nav') %>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/home-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>About Pius Lucky</h1>
+            <span class="subheading">Simple me!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <% about_author.forEach(instance => { %>
+        <div class="post-preview">
+         <div class="card-body">
+           Here are my details ::
+             <div class="card mt-4">
+               <div class="card-body">
+                 <h4 class="card-title">First Name: <%= instance.first_name %></h4>
+                 <h4 class="card-title">Last Name: <%= instance.last_name %></h4>
+                 <h4 class="card-title">Contact: <%= instance.contact %></h4>
+                 <div class="card-text mt-2">Github: <%= instance.github %></div>
+                 <div class="card-text mt-2">Achievements: <%= instance.achievements %></div>
+                 <br>
+                 <a href="/about/edit/<%= instance.id %>" class="btn btn-info">Edit</a>
+                 <form action="about/delete/<%= instance.id %>?_method=DELETE" method="POST" class="d-inline">
+                   <button type="submit" class="btn btn-danger">Delete</button>
+                 </form>
+               </div>
+             </div>
+         </div>
+        <hr>
+        <% }) %>
+        <a href="/about/new" class="btn btn-md btn-primary">Create a new Profile</a>
+         <a href="/" class="btn btn-md btn-success">View Posts</a>
+
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <%- include('../_extendables/footer-scripts') %>
+
+</body>
+
+</html>
+

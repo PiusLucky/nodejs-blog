@@ -1,0 +1,26 @@
+<div class="form-group">
+  <label for="title">First Name</label>
+  <input required value="<%= about_form.first_name %>" type="text" name="first_name" id="first_name" class="form-control">
+</div>
+<div class="form-group">
+  <label for="title">Last Name</label>
+  <input required value="<%= about_form.last_name %>" type="text" name="last_name" id="last_name" class="form-control">
+</div>
+<div class="form-group">
+  <label for="contact">Contact Address</label>
+  <textarea name="contact" id="contact" class="form-control"><%= about_form.contact %></textarea>
+</div>
+<div class="form-group">
+  <label for="github">Github</label>
+  <input required value="<%= about_form.github %>" type="text" name="github" id="github" class="form-control">
+</div>
+<div class="form-group">
+  <label for="achievements">Achievements</label>
+  <input required value="<%= about_form.achievements %>" type="number" name="achievements" id="achievements"  class="form-control">
+</div>
+<div class="form-group">
+  <label for="date_time_track">Timestamp</label>
+  <input readonly="" required value="<%= about_form.date_time_track %>" name="date_time_track" id="date_time_track"  class="form-control">
+</div>
+<a href="/about/" class="btn btn-secondary">Go Back</a>
+<button type="submit" class="btn btn-primary">Save Contact Address</button>
