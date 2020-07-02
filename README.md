@@ -47,6 +47,7 @@ Paste the above url in your browser and explore.
 ## Author
 
 👤 **Pius Lucky**
+   **Founder joint-access-programmer.com**
 
 - Github: [@PiusLucky](https://github.com/PiusLucky)
 
