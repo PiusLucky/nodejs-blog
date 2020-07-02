@@ -22,7 +22,7 @@ router.get('/edit/:id', async (req, res) => {
 // detail page of a specific post based on unique slug
 router.get('/:slug', async (req, res) => {
   const article = await blogArticle.findOne({ slug: req.params.slug })
-  if (article == null) res.redirect('/')
+  if (article == null) return res.redirect('/')
   res.render('blog_views/show', { article: article })
 })
 

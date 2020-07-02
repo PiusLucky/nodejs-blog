@@ -18,12 +18,12 @@ app.use(methodOverride('_method'))
 app.get('/', async (req, res) => {
   const articles = await blogArticle.find().sort({ published: 'desc' })
   const total_post = articles.length
-  res.render('blog_views/index', { articles: articles, total_post: total_post })
+  return res.render('blog_views/index', { articles: articles, total_post: total_post })
 })
 
 app.get('/about', async (req, res) => {
   const about_author = await aboutBlogger.find().sort({ date_time_track: 'desc' })
-  res.render('about_views/about', { about_author: about_author })
+  return res.render('about_views/about', { about_author: about_author })
 })
 // for linking css/other static assets
 app.use(express.static(__dirname + '/public'))

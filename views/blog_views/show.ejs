@@ -7,7 +7,7 @@
 
 <body>
  <%- include('../_extendables/nav') %>
-
+ <% if (article) { %>
   <!-- Page Header -->
   <header class="masthead" style="background-image: url('img/post-bg.jpg')">
     <div class="overlay"></div>
@@ -35,13 +35,14 @@
         </div>
       </div>
     </div>
-  </article>
-
+  </article> 
   <hr>
+  
   <div style="display: flex;justify-content: center;">
     <a href="/" class="btn btn-secondary">All Articles</a>
     <a href="/edit/<%= article.id %>" class="btn btn-info">Edit</a>
   </div>
+  <% } %>
   <%- include('../_extendables/footer-scripts') %>
 
 </body>
